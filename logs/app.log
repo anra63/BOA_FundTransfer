@@ -1,0 +1,196 @@
+2024-12-16 11:35:18 [restartedMain] INFO  com.example.BOA_FundTransfer.BoaFundTransferApplication - Starting BoaFundTransferApplication using Java 17.0.12 with PID 26200 (C:\Users\anura\OneDrive\Desktop\Ram\mytest\BOA_FundTransfer\build\classes\java\main started by anura in C:\Users\anura\OneDrive\Desktop\Ram\mytest\BOA_FundTransfer)
+2024-12-16 11:35:18 [restartedMain] INFO  com.example.BOA_FundTransfer.BoaFundTransferApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-16 11:35:18 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-12-16 11:35:18 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-12-16 11:35:20 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-16 11:35:20 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 112 ms. Found 1 JPA repository interface.
+2024-12-16 11:35:21 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-12-16 11:35:21 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-16 11:35:21 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-16 11:35:21 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-16 11:35:21 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-16 11:35:21 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3247 ms
+2024-12-16 11:35:22 [restartedMain] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-16 11:35:22 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-16 11:35:22 [restartedMain] INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-16 11:35:23 [restartedMain] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-16 11:35:23 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-12-16 11:35:23 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@413d5598
+2024-12-16 11:35:23 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-12-16 11:35:23 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-16 11:35:23 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-12-16 11:35:23 [restartedMain] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-16 11:35:24 [restartedMain] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-16 11:35:25 [restartedMain] DEBUG org.hibernate.SQL - 
+    create table fund_transfer (
+        transfer_id bigint not null auto_increment,
+        amount decimal(38,2) not null,
+        receiver_account_id integer,
+        sender_account_id integer,
+        status varchar(255) not null,
+        primary key (transfer_id)
+    ) engine=InnoDB
+2024-12-16 11:35:25 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-16 11:35:26 [restartedMain] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-16 11:35:27 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2024-12-16 11:35:27 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-12-16 11:35:27 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2024-12-16 11:35:27 [restartedMain] INFO  com.example.BOA_FundTransfer.BoaFundTransferApplication - Started BoaFundTransferApplication in 9.146 seconds (process running for 10.291)
+2024-12-16 11:39:31 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-16 11:39:31 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2024-12-16 11:39:31 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2024-12-16 11:40:27 [restartedMain] INFO  com.example.BOA_FundTransfer.BoaFundTransferApplication - Starting BoaFundTransferApplication using Java 17.0.12 with PID 25736 (C:\Users\anura\OneDrive\Desktop\Ram\mytest\BOA_FundTransfer\build\classes\java\main started by anura in C:\Users\anura\OneDrive\Desktop\Ram\mytest\BOA_FundTransfer)
+2024-12-16 11:40:27 [restartedMain] INFO  com.example.BOA_FundTransfer.BoaFundTransferApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-16 11:40:27 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-12-16 11:40:27 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-12-16 11:40:28 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-16 11:40:28 [restartedMain] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 58 ms. Found 1 JPA repository interface.
+2024-12-16 11:40:29 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2024-12-16 11:40:29 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2024-12-16 11:40:29 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-12-16 11:40:29 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-16 11:40:29 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-12-16 11:40:29 [restartedMain] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2008 ms
+2024-12-16 11:40:29 [restartedMain] INFO  org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-16 11:40:29 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-16 11:40:29 [restartedMain] INFO  org.hibernate.cache.internal.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2024-12-16 11:40:30 [restartedMain] INFO  org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-16 11:40:30 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-12-16 11:40:30 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@16a0b76d
+2024-12-16 11:40:30 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-12-16 11:40:30 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-16 11:40:30 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2024-12-16 11:40:30 [restartedMain] INFO  org.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-16 11:40:31 [restartedMain] INFO  org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-16 11:40:31 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-16 11:40:32 [restartedMain] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-16 11:40:33 [restartedMain] WARN  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - Unable to start LiveReload server
+2024-12-16 11:40:33 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2024-12-16 11:40:33 [restartedMain] WARN  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2024-12-16 11:40:33 [restartedMain] INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-16 11:40:33 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2024-12-16 11:40:33 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2024-12-16 11:40:33 [restartedMain] INFO  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-12-16 11:40:33 [restartedMain] ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2024-12-16 11:40:55 [http-nio-8080-exec-5] INFO  com.example.BOA_FundTransfer.Services.FundTransferServiceImpl - Fetching all fund transfers
+2024-12-16 11:40:55 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+    /* <criteria> */ select
+        ft1_0.transfer_id,
+        ft1_0.amount,
+        ft1_0.receiver_account_id,
+        ft1_0.sender_account_id,
+        ft1_0.status 
+    from
+        fund_transfer ft1_0
+2024-12-16 11:41:05 [http-nio-8080-exec-6] INFO  com.example.BOA_FundTransfer.Services.FundTransferServiceImpl - Initiating transfer from account 123 to account 456
+2024-12-16 11:41:05 [http-nio-8080-exec-6] DEBUG org.hibernate.SQL - 
+    /* insert for
+        com.example.BOA_FundTransfer.Model.FundTransfer */insert 
+    into
+        fund_transfer (amount, receiver_account_id, sender_account_id, status) 
+    values
+        (?, ?, ?, ?)
+2024-12-16 11:41:05 [http-nio-8080-exec-6] INFO  com.example.BOA_FundTransfer.Services.FundTransferServiceImpl - Fund transfer created with transfer ID: 1
+2024-12-16 11:41:58 [http-nio-8080-exec-7] INFO  com.example.BOA_FundTransfer.Services.FundTransferServiceImpl - Fetching all fund transfers
+2024-12-16 11:41:58 [http-nio-8080-exec-7] DEBUG org.hibernate.SQL - 
+    /* <criteria> */ select
+        ft1_0.transfer_id,
+        ft1_0.amount,
+        ft1_0.receiver_account_id,
+        ft1_0.sender_account_id,
+        ft1_0.status 
+    from
+        fund_transfer ft1_0
+2024-12-16 11:42:15 [http-nio-8080-exec-8] INFO  com.example.BOA_FundTransfer.Services.FundTransferServiceImpl - Fetching all fund transfers
+2024-12-16 11:42:15 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
+    /* <criteria> */ select
+        ft1_0.transfer_id,
+        ft1_0.amount,
+        ft1_0.receiver_account_id,
+        ft1_0.sender_account_id,
+        ft1_0.status 
+    from
+        fund_transfer ft1_0
+2024-12-16 11:44:33 [http-nio-8080-exec-3] INFO  com.example.BOA_FundTransfer.Services.FundTransferServiceImpl - Initiating transfer from account 123 to account 456
+2024-12-16 11:44:33 [http-nio-8080-exec-3] DEBUG org.hibernate.SQL - 
+    /* insert for
+        com.example.BOA_FundTransfer.Model.FundTransfer */insert 
+    into
+        fund_transfer (amount, receiver_account_id, sender_account_id, status) 
+    values
+        (?, ?, ?, ?)
+2024-12-16 11:44:33 [http-nio-8080-exec-3] INFO  com.example.BOA_FundTransfer.Services.FundTransferServiceImpl - Fund transfer created with transfer ID: 2
+2024-12-16 11:45:19 [http-nio-8080-exec-4] INFO  com.example.BOA_FundTransfer.Services.FundTransferServiceImpl - Fetching all fund transfers
+2024-12-16 11:45:19 [http-nio-8080-exec-4] DEBUG org.hibernate.SQL - 
+    /* <criteria> */ select
+        ft1_0.transfer_id,
+        ft1_0.amount,
+        ft1_0.receiver_account_id,
+        ft1_0.sender_account_id,
+        ft1_0.status 
+    from
+        fund_transfer ft1_0
+2024-12-16 11:45:27 [http-nio-8080-exec-5] INFO  com.example.BOA_FundTransfer.Services.FundTransferServiceImpl - Fetching all fund transfers
+2024-12-16 11:45:27 [http-nio-8080-exec-5] DEBUG org.hibernate.SQL - 
+    /* <criteria> */ select
+        ft1_0.transfer_id,
+        ft1_0.amount,
+        ft1_0.receiver_account_id,
+        ft1_0.sender_account_id,
+        ft1_0.status 
+    from
+        fund_transfer ft1_0
+2024-12-16 11:46:17 [http-nio-8080-exec-8] INFO  com.example.BOA_FundTransfer.Services.FundTransferServiceImpl - Fetching fund transfer with transfer ID: 1
+2024-12-16 11:46:17 [http-nio-8080-exec-8] DEBUG org.hibernate.SQL - 
+    select
+        ft1_0.transfer_id,
+        ft1_0.amount,
+        ft1_0.receiver_account_id,
+        ft1_0.sender_account_id,
+        ft1_0.status 
+    from
+        fund_transfer ft1_0 
+    where
+        ft1_0.transfer_id=?
+2024-12-16 11:47:19 [http-nio-8080-exec-2] INFO  com.example.BOA_FundTransfer.Services.FundTransferServiceImpl - Fetching fund transfers by sender account ID: 123
+2024-12-16 11:47:19 [http-nio-8080-exec-2] DEBUG org.hibernate.SQL - 
+    /* <criteria> */ select
+        ft1_0.transfer_id,
+        ft1_0.amount,
+        ft1_0.receiver_account_id,
+        ft1_0.sender_account_id,
+        ft1_0.status 
+    from
+        fund_transfer ft1_0 
+    where
+        ft1_0.sender_account_id=?
+2024-12-16 12:32:29 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=24m5s749ms336µs300ns).
