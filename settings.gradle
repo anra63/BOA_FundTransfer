@@ -1,4 +1,6 @@
 rootProject.name = 'BOA_FundTransfer'
 include(":BOA_AccountService")
+include(":BOA_UserManagement")
 
 project(":BOA_AccountService").projectDir = new File("../BOA_AccountService")
+project(":BOA_UserManagement").projectDir = new File("../BOA_UserManagement")
