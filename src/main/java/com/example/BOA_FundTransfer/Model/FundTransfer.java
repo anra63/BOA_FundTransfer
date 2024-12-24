@@ -28,7 +28,7 @@ public class FundTransfer {
     private Integer receiverAccountId;
 
     @Column(nullable = false)
-    private BigDecimal amount;
+    private Double amount;
 
     @Column(nullable = false)
     private String status;  // For example: "PENDING", "COMPLETED", "FAILED"

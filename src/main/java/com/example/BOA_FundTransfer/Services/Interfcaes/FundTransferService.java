@@ -9,6 +9,7 @@ public interface FundTransferService {
 
     // Create a fund transfer record
     FundTransfer createTransfer(FundTransfer fundTransfer);
+
     // Find all transfers by sender account ID
     List<FundTransfer> findAllBySenderAccountId(Integer senderAccountId);
 
@@ -19,11 +20,13 @@ public interface FundTransferService {
     List<FundTransfer> getAllTransfers();
 
     // Retrieve a specific transfer by ID
-    Optional<FundTransfer> getTransferById(Long transferId);
+    Optional<FundTransfer> getTransfer(Long transferId);
 
     // Retrieve all transfers by sender account ID
     List<FundTransfer> getTransfersBySenderAccountId(Integer senderAccountId);
 
     // Retrieve all transfers by receiver account ID
     List<FundTransfer> getTransfersByReceiverAccountId(Integer receiverAccountId);
+
+    Optional<FundTransfer> getTransferById(Long transferId);
 }

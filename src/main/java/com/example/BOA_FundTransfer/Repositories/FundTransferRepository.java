@@ -9,5 +9,9 @@ public interface FundTransferRepository extends JpaRepository<FundTransfer, Long
     List<FundTransfer> findAllBySenderAccountId(Integer senderAccountId);
 
     List<FundTransfer> findAllByReceiverAccountId(Integer receiverAccountId);
+
+    List<FundTransfer> findByReceiverAccountId(Integer receiverAccountId);
+
+    List<FundTransfer> findBySenderAccountId(Integer senderAccountId);
     // You can add custom queries if needed
 }

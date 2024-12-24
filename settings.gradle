@@ -1,1 +1,4 @@
 rootProject.name = 'BOA_FundTransfer'
+include(":BOA_AccountService")
+
+project(":BOA_AccountService").projectDir = new File("../BOA_AccountService")
